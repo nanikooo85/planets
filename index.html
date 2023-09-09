@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets Fact Site</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">THE PLANETS</div>
+        <nav>
+            <ul>
+                <li><a href="#" data-planet="mercury">MERCURY</a></li>
+                <li><a href="#" data-planet="venus">VENUS</a></li>
+                <li><a href="#" data-planet="earth">EARTH</a></li>
+                <li><a href="#" data-planet="mars">MARS</a></li>
+                <li><a href="#" data-planet="jupiter">JUPITER</a></li>
+                <li><a href="#" data-planet="saturn">SATURN</a></li>
+                <li><a href="#" data-planet="uranus">URANUS</a></li>
+                <li><a href="#" data-planet="neptune">NEPTUNE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="planet-info">
+            <div class="planet-image">
+                <img src="mercury.jpg" alt="Mercury" width="300" height="300">
+            </div>
+            <div class="planet-text">
+                <h1>MERCURY</h1>
+                <p>Planet describtion here.</p>
+                <ul class="planet-options">
+                    <li><button id="overview-button">01 OVERVIEW</button></li>
+                    <li><button id="structure-button">02 INTERNAL STRUCTURE</button></li>
+                    <li><button id="geology-button">03 SURFACE GEOLOGY</button></li>
+                </ul>
+                <p>source: <a id="source-link" href="#" target="_blank">Wikipedia</a></p>
+            </div>
+
+            <!-- Content sections for Overview, Internal Structure, and Surface Geology -->
+            <div id="overview-content" class="planet-info-content hidden">
+                <!-- Overview- content will be displayed here -->
+            </div>
+            <div id="structure-content" class="planet-info-content hidden">
+                <!-- Structure content will be displayed here -->
+            </div>
+            <div id="geology-content" class="planet-info-content hidden">
+                <!-- Geology content will be displayed here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="planet-data">
+            <ul>
+                <li>ROTATION TIME <span id="rotation-time-value"></span></li>
+                <li>REVOLUTION TIME <span id="revolution-time-value"></span></li>
+                <li>RADIUS<span id="radius-value"></span></li>
+                <li>AVERAGE TEMP.<span id="average-temp-value"></span></li>
+            </ul>
+        </section>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
